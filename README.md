@@ -27,9 +27,9 @@ The following data cleaning operations have been performed:
 
 ## Contribution
 - **Guanhong Chen**: Data cleaning and preprocessing.
-- **Piotr Lichota**: Model training and evaluation.
-- **Mikołaj Sydow**: Project management and reporting.
-- **Yun Wu**: Data analysis and visualization.
+- **Piotr Lichota**: Logistic regression and RandomForest.
+- **Mikołaj Sydow**: AdaBoost.
+- **Yun Wu**: XGBoost.
 
 
 
