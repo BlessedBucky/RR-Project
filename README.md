@@ -1,9 +1,8 @@
 # Loan Default Prediction Project
 
 ## Project Overview
-The project is to check whether the research paer named "Research on loan default prediction based on logistic regression, randomforest, xgboost and adaboost" is reproducible. The dataset link is shown as follows: https://www.kaggle.com/datasets/laotse/credit-risk-dataset/data
+The project is to check whether the research paer named "Research on loan default prediction based on logistic regression, randomforest, xgboost and adaboost" is reproducible. This paper aims to predict loan default risks using machine learning algorithms such as Logistic Regression, Random Forest, XGBoost, and AdaBoost. The dataset link is shown as follows: https://www.kaggle.com/datasets/laotse/credit-risk-dataset/data
 
-This paper aims to predict loan default risks using machine learning algorithms such as Logistic Regression, Random Forest, XGBoost, and AdaBoost. The data has been cleaned, including handling missing values, removing outliers, and standardizing the data for modeling. 
 
 ## Environment Setup
 1. Clone this repository to your local machine.
