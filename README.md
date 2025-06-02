@@ -2,6 +2,7 @@
 
 ## Project Overview
 This project aims to predict loan default risks using machine learning algorithms such as Logistic Regression, Random Forest, XGBoost, and AdaBoost. The data cleaning portion of the project has been completed, including handling missing values, removing outliers, and standardizing the data for modeling.
+https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.kaggle.com%2Fdatasets%2Flaotse%2Fcredit-risk-dataset%2Fdata&h=AT0WB7eQL3Yod3QWjlLZy-m2W8rDXRtcUY_lu9ZgRwvei64fnBQLWHKi-yrs4OFcF65YeuMCHPP-l3pxY4coBHPcMUzzrY-_c59So7XTPpM3eJ_QDVK5RHCO-RKWw0frt1cBLw
 
 ## Environment Setup
 1. Clone this repository to your local machine.
