@@ -10,7 +10,7 @@ The project is to check whether the research paer named "Research on loan defaul
    ```bash
    pip install -r requirements.txt
 ## Code Execution Instructions
-After running the code, the cleaned dataset will be saved as `credit_risk_dataset_cleaned.csv`.
+After running the project.py file, the cleaned dataset will be saved as `credit_risk_dataset_cleaned.csv`.
 
 ## Data Description
 The dataset contains the following columns:
