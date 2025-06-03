@@ -9,80 +9,63 @@ The project is to check whether the research paer named "Research on loan defaul
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
-Code Execution Instructions
-After running the project.py file, the cleaned dataset will be saved as credit_risk_dataset_cleaned.csv.
+## Code Execution Instructions
+After running the `project.py` file, the cleaned dataset will be saved as `credit_risk_dataset_cleaned.csv`.
 
-The code performs data cleaning and preprocessing as follows:
+The code performs the following data cleaning and preprocessing steps:
 
-Missing values for person_emp_length are filled with the median.
+- **Handling Missing Values**:
+  - Missing values for `person_emp_length` are filled with the median value.
+  - Missing values for `loan_int_rate` are filled with the mean value.
 
-Missing values for loan_int_rate are filled with the mean.
+- **Removing Outliers**:
+  - Records where `person_age` exceeds 100 or `person_income` exceeds 500,000 are removed.
+  - Data entries where `person_emp_length` is greater than `person_age` are removed.
+  - Records where `person_age` is greater than 60 are removed.
 
-Records where person_age exceeds 100 or person_income exceeds 500,000 are removed.
+- **Categorical Data Transformation**:
+  - Categorical features (`person_home_ownership`, `loan_intent`, `loan_grade`, `cb_person_default_on_file`) are converted to category data type.
 
-Data entries where the person_emp_length is greater than person_age or where the person_age is greater than 60 are also removed.
+- **Feature Standardization**:
+  - Numerical features (`person_income`, `loan_amnt`, `loan_int_rate`, `loan_percent_income`) are standardized using z-score normalization.
 
-Categorical features (person_home_ownership, loan_intent, loan_grade, cb_person_default_on_file) are converted to category data type.
-
-Numerical features (person_income, loan_amnt, loan_int_rate, loan_percent_income) are standardized (z-score normalization).
-
-Data Description
+## Data Description
 The dataset contains the following columns:
 
-person_emp_length: Number of years the borrower has been employed.
+- `person_emp_length`: Number of years the borrower has been employed.
+- `loan_int_rate`: The interest rate of the loan.
+- `person_age`: Age of the borrower.
+- `person_income`: The income of the borrower.
+- `person_home_ownership`: Home ownership status (categorical).
+- `loan_intent`: Purpose of the loan (categorical).
+- `loan_grade`: Loan grade (categorical).
+- `cb_person_default_on_file`: Indicates if the person has a default record on file (categorical).
+- `loan_amnt`: Amount of the loan.
+- `loan_percent_income`: Percentage of income taken by the loan.
 
-loan_int_rate: The interest rate of the loan.
-
-person_age: Age of the borrower.
-
-person_income: The income of the borrower.
-
-person_home_ownership: Home ownership status (categorical).
-
-loan_intent: Purpose of the loan (categorical).
-
-loan_grade: Loan grade (categorical).
-
-cb_person_default_on_file: Indicates if the person has a default record on file (categorical).
-
-loan_amnt: Amount of the loan.
-
-loan_percent_income: Percentage of income taken by the loan.
-
-Data Cleaning Operations
+## Data Cleaning Operations
 The following data cleaning operations have been performed:
 
-Missing values handling:
+- **Missing Values Handling**:
+  - `person_emp_length`: Filled with the median value.
+  - `loan_int_rate`: Filled with the mean value.
 
-person_emp_length: Filled with the median value.
+- **Outlier Handling**:
+  - Removed records where `person_age` exceeds 100 or `person_income` exceeds 500,000.
+  - Removed records where `person_emp_length` is greater than `person_age`.
+  - Removed records where `person_age` is greater than 60.
 
-loan_int_rate: Filled with the mean value.
+- **Categorical Data Transformation**:
+  - Converted categorical features (`person_home_ownership`, `loan_intent`, `loan_grade`, `cb_person_default_on_file`) to category data type.
 
-Outlier handling:
+- **Feature Standardization**:
+  - Standardized numerical features (`person_income`, `loan_amnt`, `loan_int_rate`, `loan_percent_income`) using z-score normalization.
 
-Removed records where person_age exceeds 100 or person_income exceeds 500,000.
-
-Removed records where person_emp_length is greater than person_age.
-
-Removed records where person_age is greater than 60.
-
-Categorical data transformation:
-
-Converted categorical features (person_home_ownership, loan_intent, loan_grade, cb_person_default_on_file) to category data type.
-
-Feature standardization:
-
-Standardized numerical features (person_income, loan_amnt, loan_int_rate, loan_percent_income) using z-score normalization.
-
-Contribution
-Guanhong Chen: Data cleaning and preprocessing.
-
-Piotr Lichota: Logistic regression and RandomForest.
-
-Mikołaj Sydow: AdaBoost.
-
-Yun Wu: XGBoost.
-
+## Contribution
+- **Guanhong Chen**: Data cleaning and preprocessing.
+- **Piotr Lichota**: Logistic regression and RandomForest.
+- **Mikołaj Sydow**: AdaBoost.
+- **Yun Wu**: XGBoost.
 
 
 
