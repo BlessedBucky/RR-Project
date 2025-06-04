@@ -64,14 +64,14 @@ The following data cleaning operations have been performed:
 ## Model Hyperparameters
 
 - **Data split**
-  - `random_state=42`
+  - Random state (`random_state=42`)
 
 - **Random Forest**
-  - Iterations (`n_iter`): `100`
-  - RandomizedSearch `random_state`: `37`
+  - Iterations (`n_iter=100`)
+  - RandomizedSearch (`random_state=37`)
 
 - **Logistic Regression**
-  - Maximum iterations (`max_iter`): `1000`
+  - Maximum iterations (`max_iter=1000`)
 
 ## Contribution
 - **Guanhong Chen**: Data cleaning and preprocessing.
