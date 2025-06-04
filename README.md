@@ -61,6 +61,13 @@ The following data cleaning operations have been performed:
 - **Feature Standardization**:
   - Standardized numerical features (`person_income`, `loan_amnt`, `loan_int_rate`, `loan_percent_income`) using z-score normalization.
 
+## Important model parameters
+The following parameter value have been used for models:
+- Data split randomstate: 42
+- Random forest iterations: 100
+- Random forest randomized search random state: 37
+- Logistic regression max iterations: 1000
+
 ## Contribution
 - **Guanhong Chen**: Data cleaning and preprocessing.
 - **Piotr Lichota**: Logistic regression and RandomForest.
