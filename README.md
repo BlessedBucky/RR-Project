@@ -14,14 +14,13 @@ After running the `project.py` file, the cleaned dataset will be saved as `credi
 
 The code performs the following data cleaning and preprocessing steps:
 
-- **Handling Missing Values**:
-  - Missing values for `person_emp_length` are filled with the median value.
-  - Missing values for `loan_int_rate` are filled with the mean value.
 
 - **Removing Outliers**:
   - Records where `person_age` exceeds 100 or `person_income` exceeds 500,000 are removed.
   - Data entries where `person_emp_length` is greater than `person_age` are removed.
   - Records where `person_age` is greater than 60 are removed.
+  - Missing values for `person_emp_length` removed.
+  - Missing values for `loan_int_rate` removed.
 
 - **Categorical Data Transformation**:
   - Categorical features (`person_home_ownership`, `loan_intent`, `loan_grade`, `cb_person_default_on_file`) are converted to category data type.
@@ -42,24 +41,6 @@ The dataset contains the following columns:
 - `cb_person_default_on_file`: Indicates if the person has a default record on file (categorical).
 - `loan_amnt`: Amount of the loan.
 - `loan_percent_income`: Percentage of income taken by the loan.
-
-## Data Cleaning Operations
-The following data cleaning operations have been performed:
-
-- **Missing Values Handling**:
-  - `person_emp_length`: Filled with the median value.
-  - `loan_int_rate`: Filled with the mean value.
-
-- **Outlier Handling**:
-  - Removed records where `person_age` exceeds 100 or `person_income` exceeds 500,000.
-  - Removed records where `person_emp_length` is greater than `person_age`.
-  - Removed records where `person_age` is greater than 60.
-
-- **Categorical Data Transformation**:
-  - Converted categorical features (`person_home_ownership`, `loan_intent`, `loan_grade`, `cb_person_default_on_file`) to category data type.
-
-- **Feature Standardization**:
-  - Standardized numerical features (`person_income`, `loan_amnt`, `loan_int_rate`, `loan_percent_income`) using z-score normalization.
 
 ## Model Hyperparameters
 
